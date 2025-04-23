@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+
+ </script>
+ <!--
+<script type="text/javascript">
+   (function(){
+    emailjs.init("WcvY3fa6iAlPutT0E");
+   })();
+</script>
+-->
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init( "LyqgBQeul4myqI_U-");
+       
+      
+   })();
+</script>
+
+        <title>مشروع</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    </head>
+    
+    <body>
+
+       
+    <header>
+      <div class="container top-nav">
+          <a href="index.html" class="logo"><img src="logo.png" alt=""></a>
+          <form action="" class="search">
+              <input type="search" placeholder="Search for products...">
+              <button type="submit">Search</button>
+          </form>
+
+          <div class="cart_header">
+              <div onclick="open_cart()" class="icon_cart">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span class="count_item">0</span>
+              </div>
+              <div class="tottal_price">
+                  
+                  
+              </div>
+          </div>
+      </div>
+
+      <nav>
+          <div class="links container">
+              
+              <ul id="menu">
+                <h1>Delivery to all cities in Morocco</h1>
+                <h2>التوصيل لجميع مدن المغرب</h2>
+                
+                  
+              </ul>
+
+              
+          </div>
+      </nav>
+  </header>
+
+  
+
+ 
+  <div class="slide" style="margin-top: 40px ;"> 
+    <div class="container">
+      
+             <div class="banner_2"> <a href="#"><video src="video.mp4" autoplay muted loop></video></a> 
+
+            </div> 
+            <div class="slide-swp mySwiper">
+         <div class="swiper-wrapper">
+           <div class="swiper-slide"><a href="#"><img src="img1M.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img2M.jpg" alt=""></a></div> 
+           <div class="swiper-slide"><a href="#"><img src="img3M.jpg" alt=""></a></div> </div>
+            <div class="swiper-pagination"></div> 
+          </div>
+          </div> 
+        </div> 
+
+
+        <section class="features">
+          <div class="container">
+            <div class="top_slide">
+            <h2  >مميزات المنتج  <span>  كلاكواسيد  </span></h2>
+            </div>
+            <div class="feature-list">
+              <div class="feature">
+                <h3>ميزة 1</h3>
+                <p>تمنحك ترطيبًا عميقًا لبشرتك الجافة.</p>
+              </div>
+              <div class="feature">
+                <h3>ميزة 2</h3>
+                <p>مكونات طبيعية وآمنة لجميع أنواع البشرة.</p>
+              </div>
+              <div class="feature">
+                <h3>ميزة 3</h3>
+                <p>نتائج تظهر من أول استخدام.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="pricing-section">
+        <div class="pricing-box">
+          
+          <h2>الثمن والعروض</h2>
+          <ul>
+            <li><strong>المنتج الواحد:</strong> 150 درهم</li>
+            <li><strong>عرض خاص:</strong> 2 منتجات بـ 250 درهم فقط</li>
+          </ul>
+        </div>
+        </div>
+    
+
+
+        <section class="checkout">
+          <div class="container">
+              <form action="">
+                  <div class="address">
+                      <h2>Delivery Address</h2>
+                      <h2>عنوان التسليم</h2>
+
+  
+                      <div class="inputs">
+                        <label for="name">Name   اسم</label>
+                          <input id="name"  name="name" type="text" placeholder="enter your name">
+
+                          <label for="email">Email  ايمل</label>
+                          <input  id="email" name="email" type="email" placeholder="Enter your Email">
+
+                          <label for="address">Address    العنوان</label>
+                          <input id="address"  name="address" type="text" placeholder="enter your address">
+  
+                          <label for="quantity">Quantity    الكمية </label>
+                          <input  id="quantity" name="quantity" type="number" placeholder="enter the quantity">
+
+
+                          <label for="phone">Phone  رقم الهاتف</label>
+                          <input id="phone"  name="phone" type="number" placeholder="enter your phone">
+                      </div>
+                      
+                    <div class="button_div">
+                      <button type="button" onclick="sendmsg()">Place order</button>
+                  </div>
+                  </div>
+                  </form>
+                  </div>
+                  </section>
+                  <div id="success-msg">
+                    well Done
+                 </div>
+           
+                  <div class="img-delivery">
+                    <img src="delvery.png" alt="">
+                  </div>
+                  
+                  <button id="btn"><i class="fa-solid fa-arrow-up"></i></button>
+                
+          <footer>
+            <div class="container">
+              <p>© 2025 متجر المنتج. جميع الحقوق محفوظة.</p>
+            </div> 
+       
+
+</footer>     
+
+
+           <!--
+          <section class="pricing">
+            <div class="container">
+              <h2>السعر</h2>
+              <p><strong>99</strong> دولار</p>
+              
+            </div>
+          </section>
+          <form>
+            <label for="name">الاسم:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="phone">رقم الهاتف:</label><br>
+            <input type="text" id="phone" name="phone" required><br>
+            
+            <label for="email">البريد الإلكتروني:</label><br>
+            <input type="text" id="email" name="email" required><br>
+            
+            <label for="quantity">الكمية:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            <button type="button" onclick="sendmsg()">اشترِ الآن</button>
+            
+        </form>
+          <footer>
+            <div class="container">
+              <p>© 2024 متجر المنتج. جميع الحقوق محفوظة.</p>
+            </div> 
+       
+
+</footer>
+
+-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
